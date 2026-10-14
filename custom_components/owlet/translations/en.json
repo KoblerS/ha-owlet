@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Owlet Dream Sock",
+        "description": "Sign in with your Owlet app account.",
+        "data": {
+          "region": "Region",
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Owlet",
+        "description": "Enter the password for {email} again.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not connect to the Owlet cloud.",
+      "no_devices": "No supported Owlet devices were found on this account.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This Owlet account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "selector": {
+    "region": {
+      "options": {
+        "europe": "Europe",
+        "world": "World (US & rest of world)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heart_rate": { "name": "Heart rate" },
+      "oxygen_saturation": { "name": "Oxygen saturation" },
+      "oxygen_10_av": { "name": "Oxygen (10 min average)" },
+      "movement": { "name": "Movement" },
+      "skin_temperature": { "name": "Skin temperature" },
+      "battery_percentage": { "name": "Battery" },
+      "battery_minutes": { "name": "Battery runtime" },
+      "signal_strength": { "name": "Signal strength" },
+      "sleep_state": {
+        "name": "Sleep state",
+        "state": {
+          "unknown": "Unknown",
+          "awake": "Awake",
+          "light_sleep": "Light sleep",
+          "deep_sleep": "Deep sleep"
+        }
+      }
+    },
+    "binary_sensor": {
+      "base_station_on": { "name": "Base station" },
+      "sock_connection": { "name": "Sock connection" },
+      "sock_off": { "name": "Sock off" },
+      "charging": { "name": "Charging" },
+      "high_heart_rate_alert": { "name": "High heart rate alert" },
+      "low_heart_rate_alert": { "name": "Low heart rate alert" },
+      "low_oxygen_alert": { "name": "Low oxygen alert" },
+      "high_oxygen_alert": { "name": "High oxygen alert" },
+      "low_battery_alert": { "name": "Low battery alert" },
+      "lost_power_alert": { "name": "Lost power alert" },
+      "firmware_update_available": { "name": "Firmware update available" }
+    }
+  }
+}

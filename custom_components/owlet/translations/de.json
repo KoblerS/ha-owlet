@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Owlet Dream Sock",
+        "description": "Melde dich mit deinem Owlet-App-Konto an.",
+        "data": {
+          "region": "Region",
+          "email": "E-Mail",
+          "password": "Passwort"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Owlet erneut anmelden",
+        "description": "Gib das Passwort für {email} erneut ein.",
+        "data": {
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ungültige E-Mail oder Passwort.",
+      "cannot_connect": "Verbindung zur Owlet-Cloud fehlgeschlagen.",
+      "no_devices": "Auf diesem Konto wurden keine unterstützten Owlet-Geräte gefunden.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten."
+    },
+    "abort": {
+      "already_configured": "Dieses Owlet-Konto ist bereits eingerichtet.",
+      "reauth_successful": "Die erneute Anmeldung war erfolgreich."
+    }
+  },
+  "selector": {
+    "region": {
+      "options": {
+        "europe": "Europa",
+        "world": "Welt (USA & restliche Welt)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heart_rate": { "name": "Herzfrequenz" },
+      "oxygen_saturation": { "name": "Sauerstoffsättigung" },
+      "oxygen_10_av": { "name": "Sauerstoff (10-Min-Mittel)" },
+      "movement": { "name": "Bewegung" },
+      "skin_temperature": { "name": "Hauttemperatur" },
+      "battery_percentage": { "name": "Batterie" },
+      "battery_minutes": { "name": "Batterielaufzeit" },
+      "signal_strength": { "name": "Signalstärke" },
+      "sleep_state": {
+        "name": "Schlafzustand",
+        "state": {
+          "unknown": "Unbekannt",
+          "awake": "Wach",
+          "light_sleep": "Leichtschlaf",
+          "deep_sleep": "Tiefschlaf"
+        }
+      }
+    },
+    "binary_sensor": {
+      "base_station_on": { "name": "Basisstation" },
+      "sock_connection": { "name": "Socken-Verbindung" },
+      "sock_off": { "name": "Socke abgelegt" },
+      "charging": { "name": "Lädt" },
+      "high_heart_rate_alert": { "name": "Alarm hohe Herzfrequenz" },
+      "low_heart_rate_alert": { "name": "Alarm niedrige Herzfrequenz" },
+      "low_oxygen_alert": { "name": "Alarm niedriger Sauerstoff" },
+      "high_oxygen_alert": { "name": "Alarm hoher Sauerstoff" },
+      "low_battery_alert": { "name": "Alarm schwache Batterie" },
+      "lost_power_alert": { "name": "Alarm Stromausfall" },
+      "firmware_update_available": { "name": "Firmware-Update verfügbar" }
+    }
+  }
+}
